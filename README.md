@@ -23,7 +23,8 @@ _Path and sleep time should be adjusted to match your preferences. The number of
 #### Shell:
 
 ```bash
-sudo bash -c 'while true; do ./main.sh > /home/traaitt/tor/index.html && sleep 23; done'
+sudo bash -c 'while true; do ./main.sh > /home/traaitt/tor/index.html; sleep 23; done'
+
 ```
 
 ## Example Output:
