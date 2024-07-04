@@ -12,6 +12,10 @@ You will need a fully synced daemon running with the detailed block explorer out
 XTEnetwork --enable-blockexplorer --enable-blockexplorer-detailed
 ```
 
+```
+y66euagdhzaumt5jhftidvd3gaml57glzcvycmdzrydth2kvrverh6ad.onion
+```
+
 This script will loop every 30 seconds, querying the daemon for results and writing a static file to the location of the Onion site you're hosting.
 
 _Path and sleep time should be adjusted to match your preferences. The number of blocks you display can also be adjusted up to 144 by changing the last curl statement in `main.sh` to a different value ranging from `[0:0]` to `[0:144]`_
@@ -19,156 +23,62 @@ _Path and sleep time should be adjusted to match your preferences. The number of
 #### Shell:
 
 ```bash
-while true; do ./main.sh > /var/www/tor/address.onion/index.html && sleep 68; done
+sudo bash -c 'while true; do ./main.sh > /home/traaitt/tor/index.html && sleep 23; done'
 ```
 
 ## Example Output:
 
 ```bash
-$$$$$ TRAAITTPLATFORM $$$$$$$$$$$$$$$$$$$||||||||||||||||||||||||||||||||||||||||||C|O|P|Y|RI|G|H|T||||||||||
-$$$$$$$$$888888888$$$$$$$$$  $$    $$                                |2020 - TODAY||||||||||||||||||||||||
-$$$$       8888   $$$    $$$  $$  $$ CCCC U U RRR RRR EEE N N CCC Y Y|||||||||||||||||||||||||||||||||
-$$$$$$$$   8888   $$$    $$$   $$$$  CC   U U RR  RR  E   NNN C    Y |||||||||||||||||||||||||||||
-$$$$       8888   $$$$$$$$$   $$  $$ CCCC UUU RRR RRR EEE N N CCC  Y |||||||||||||||||||||||||
-$$$$$$$$$$ 8888   $$$    $$$ $$    $$                                |||||||||||||||||||||
-$$$$$$$$$$ 8888   $$$     $$$$$$$$$$$$$$ HTTPS://TRAAITTPLATFORM.COM |||||||||||||||||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-traaittPlatform Static Block Explorer
-
+||====================================================================||
+||////////////////////////////////////////////////////////////////////||
+|| 100$ =================| FEDERAL RESERVE NOTE |=============== 100$ ||
+|||||                    ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                  |||||
+||<<|    TRRXITTE Int.                                             |>>||
+||>>|                          88888888888         T44737133B      |<<||
+||<<|                              $$$                             |>>||
+||>>|                              888                             |<<||
+||<<|      T44737133B              $$$             One Hundred     |>>||
+||>>|                                                              |<<||
+||<<|      Treasurer     ________________________     Secretary 17 |>>||
+|||||                  ~|UNITED STATES OF AMERICA|~                |||||
+|| 100$ ==================  ONE HUNDRED traaitt ================ 100$ ||
+||////////////////////////////////////////////////////////////////////||
+||====================================================================||
+traaitt.com cryptonote currency static explorer!
 
 ### CURRENT BLOCK ###
-height - 1968281
-network_height - 1968281
+height - 577987
+network_height - 577987
 status - OK
 
 ### LAST BLOCK HEADER ###
-block_size - 392
-depth - 0
-difficulty - 10887475102
-hash - 952bdd8509c427a7676b8889d4fb77af4317f755c06aa4673d9126708001a6b8
-height - 1968280
-major_version - 6
-minor_version - 0
-nonce - 314889
-num_txes - 1
-orphan_status - false
-prev_hash - 91f14c591a5f5b08d489b651fb1403c3218ba873e98a568ec5be22a49ae9c4ab
-reward - 2810521
-timestamp - 1572237740
-
 ### NETWORK INFO ###
-alt_blocks_count - 0
-difficulty - 10907541234
-grey_peerlist_size - 1230
-hashrate - 363584707
-height - 1968281
-incoming_connections_count - 7
-last_known_block_index - 1968279
+alt_blocks_count - 1
+difficulty - 63750700
+grey_peerlist_size - 39
+hashrate - 1416682
+height - 577987
+incoming_connections_count - 8
+last_known_block_index - 577984
 major_version - 6
 minor_version - 0
-network_height - 1968281
-outgoing_connections_count - 8
-start_time - 1572231828
+network_height - 577987
+outgoing_connections_count - 6
+
+outgoing_connections_count - 6
+start_time - 1720046818
 status - OK
-supported_height - 2000000
+supported_height - 100000000
 synced - true
-tx_count - 2872654
+tx_count - 367670
 tx_pool_size - 0
-upgrade_heights - [187000,350000,440000,620000,700000,800000,1000000,1200000,1300000,1400000,1600000,1800000,2000000,2200000,2400000,2600000,2800000,3000000]
-version - 0.20.0
-white_peerlist_size - 80
+upgrade_heights - [1,440000,800000,1000000,100000000]
+version - 0.10.45
+white_peerlist_size - 9
 
 ### PENDING TRANSACTIONS ###
-missed_tx - []
-status - OK
-txs_as_hex - []
 
 ### LAST 10 BLOCKS ###
-[
-  {
-    "cumul_size": 392,
-    "difficulty": 10887475102,
-    "hash": "952bdd8509c427a7676b8889d4fb77af4317f755c06aa4673d9126708001a6b8",
-    "height": 1968280,
-    "timestamp": 1572237740,
-    "tx_count": 1
-  },
-  {
-    "cumul_size": 392,
-    "difficulty": 10564869655,
-    "hash": "91f14c591a5f5b08d489b651fb1403c3218ba873e98a568ec5be22a49ae9c4ab",
-    "height": 1968279,
-    "timestamp": 1572237712,
-    "tx_count": 1
-  },
-  {
-    "cumul_size": 7391,
-    "difficulty": 10247650688,
-    "hash": "4413b1c6aad9f0cb632a5c7c53b747e9bf59b8f316e0ec38d069e08de3fd19f9",
-    "height": 1968278,
-    "timestamp": 1572237707,
-    "tx_count": 2
-  },
-  {
-    "cumul_size": 392,
-    "difficulty": 10360790301,
-    "hash": "a9d112aa8143ae0b79358b6645b586307853bbbf00534ec8b2503c3a2a6862a6",
-    "height": 1968277,
-    "timestamp": 1572237703,
-    "tx_count": 1
-  },
-  {
-    "cumul_size": 392,
-    "difficulty": 10019148844,
-    "hash": "b8debab1f238c1f8f0d8b59a6e6d825e73552f6749aa115b5beed87f891b8b2a",
-    "height": 1968276,
-    "timestamp": 1572237664,
-    "tx_count": 1
-  },
-  {
-    "cumul_size": 16935,
-    "difficulty": 10196379959,
-    "hash": "4c83c731d39bd317f519bf7b8a6929740404fd4c53cac538b86f08ac921d0cfe",
-    "height": 1968275,
-    "timestamp": 1572237663,
-    "tx_count": 3
-  },
-  {
-    "cumul_size": 392,
-    "difficulty": 9953294797,
-    "hash": "23e37293e9bd75ebb300f6ac2aeedae471cb8334fb352362b9acd7172015fcf9",
-    "height": 1968274,
-    "timestamp": 1572237618,
-    "tx_count": 1
-  },
-  {
-    "cumul_size": 4109,
-    "difficulty": 9754067622,
-    "hash": "719d4094fb997f4db7cafd512d8c3c1ffd2dc1bd96bae2ead7e392f1636ba98c",
-    "height": 1968273,
-    "timestamp": 1572237609,
-    "tx_count": 2
-  },
-  {
-    "cumul_size": 13224,
-    "difficulty": 9654375431,
-    "hash": "39e6c3b4e99aa08eabcc018892d14b9b1948177c2a133d2c8572260c17cfd380",
-    "height": 1968272,
-    "timestamp": 1572237597,
-    "tx_count": 4
-  },
-  {
-    "cumul_size": 392,
-    "difficulty": 9411781842,
-    "hash": "c638ed36b326d4fc0ea9719dc300923ec6218d69af20b2c6849210483849b538",
-    "height": 1968271,
-    "timestamp": 1572237578,
-    "tx_count": 1
-  }
-]
 
 
-traaittPlatform (c) 2020
-https://traaittPlatform.com
-https://traaittchain.com
-```
+TRRXITTE Int., incorporate (c) 2024
