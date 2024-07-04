@@ -136,5 +136,4 @@ include_footer() {
 EOF
 }
 
-# Generate the HTML content
-generate_html > /home/traaitt/tor/index.html
+
