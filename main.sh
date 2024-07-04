@@ -136,4 +136,16 @@ include_footer() {
 EOF
 }
 
+# Generate the HTML content
+generate_html() {
+    generate_ascii
+    get_current_block
+    get_last_block_header
+    get_network_info
+    get_pending_transactions
+    get_last_10_blocks
+    include_footer
+}
 
+# Call function to generate HTML and save it to index.html
+generate_html > /home/traaitt/tor/index.html
